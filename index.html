@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessabilly breadcrumb trail</title>
+  </head>
+
+  <body>
+    <nav class="breadcrumb">
+      <h2 id="breadcrumblabel" class="invisible">You are here:</h2>
+      <ol aria-labelledby="breadcrumblabel" itemscope itemtype="http://schema.org/BreadcrumbList" id="breadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" id="home">
+          <a href="/" itemprop="item">Homepage</a>
+          <meta itemprop="position" content="1" />
+          <svg class="arrow" aria-hidden="true"><use xlink:href="#arrow"></use></svg>      
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/clothing/" itemprop="item">Clothing</a>
+          <meta itemprop="position" content="2" />
+          <svg class="arrow" aria-hidden="true"><use xlink:href="#arrow"></use></svg> 
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/clothing/mens/" itemprop="item">Men's clothing</a>
+          <meta itemprop="position" content="3" />
+          <svg class="arrow" aria-hidden="true"><use xlink:href="#arrow"></use></svg> 
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/clothing/mens/shoes/" itemprop="item">Shoes &amp; footwear</a>
+          <meta itemprop="position" content="4" />
+          <svg class="arrow" aria-hidden="true"><use xlink:href="#arrow"></use></svg> 
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/clothing/mens/shoes/leather/" itemprop="item">Leather</a>
+          <meta itemprop="position" content="5" />
+          <svg class="arrow" aria-hidden="true"><use xlink:href="#arrow"></use></svg> 
+        </li>    
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/clothing/mens/shoes/leather/boots/" itemprop="item" rel="prev">Boots</a>
+          <meta itemprop="position" content="6" />
+          <svg class="arrow" aria-hidden="true"><use xlink:href="#arrow"></use></svg> 
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <strong title="current page" itemprop="item" aria-current="location">Cowboy boots</strong>
+          <meta itemprop="position" content="7" />
+        </li>
+      </ol>
+    </nav>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
